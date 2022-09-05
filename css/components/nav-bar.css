@@ -1,0 +1,22 @@
+.nav {
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    background-color: #f9f9fa;
+    padding:20px 50px; 
+    box-sizing: border-box; /*padding을 추가하면 디폴트 값이 늘어남
+    형식에 맞춰주기 위해서 box-sizing:borderbox를 사용*/
+    border-top: 1px solid rgba(121, 121, 121, 0.3);
+}
+.nav__list{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__link {
+    color:#2e363e;
+}
+
+.status-bar {
+    position:fixed;
+    width:100%
+}
