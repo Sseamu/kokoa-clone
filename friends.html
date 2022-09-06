@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Friends - Kokoa Clone</title>
 </head>
-<body>
     <div class="status-bar">
         <div class="status-bar__column">
             <span>No service</span>
@@ -22,16 +21,58 @@
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
+    <header class="screen-header">
+        <h1 class="screen-header__title">Friends</h1>
+        <div class="screen-header__icons">
+            <span><i class="fas fa-search fa-xl"></i></span>
+            <span><i class="fas fa-music fa-xl"></i></span>
+            <span><i class="fas fa-cog fa-xl"></i></span>
+        </div>    
+    </header>
+    <a id="friends-display-link">
+        <i class="fa-sharp fa-solid fa-circle-info"></i>
+        Friend's Names Display
+        <i class="fas fa-chevron-right fa-xs">
+        </i>
+    </a>
+    <main class="friends__screen">
 
+    </main>
+    <div class="user-component">
+        <div class="user-component__column">
+            <img src="screenshots/My_picture.jpg" class="user-component__avatar user-component__avatar--xl"/>
+            <div class="user-component__text">
+                <h4 class="user-component__activate">HanSom
+                </h4>
+                <!--<h6 class="user-component__activate__talk">
+                    This text is test!
+                </h6>-->
+            </div>
+        </div>
+        <div class="user-component__column">
+
+        </div>
+    </div>
+    <div class="friends-screen__Channel">
+        <div class="friends-screen__Channel-header">
+            <span>Channel</span>
+            <i class="fas fa-chevron-up fa-xs">
+            </i>
+        </div>
+    </div>
     <nav class="nav">
         <ul class="nav__list">
-            <li class="nav__btn"><a class="nav__a" href="#"><i class="fas fa-user fa-2x"></i></i></a></li>
-            <li class="nav__btn"><a class="nav__a" href="#"><i class="far fa-comment fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__a" href="#"><i class="fas fa-search fa-2x"></i></a></li>
-            <li class="nav__btn"><a class="nav__a" href="#"><i class="fas fa-ellipsis-h fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fas fa-user fa-2x"></i></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#">
+                <span class="nav__notification">1</span>
+                <i class="far fa-comment fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#"><i class="fas fa-search fa-2x"></i></a></li>
+            <li class="nav__btn"><a class="nav__link" href="#">
+                <span class="nav__dot">·</span>
+                <i class="fas fa-ellipsis-h fa-2x"></i></a></li>
         </ul>
     </nav>
-
+    
 
     <script
         src="https://kit.fontawesome.com/d3a66e855b.js" 
