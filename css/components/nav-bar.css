@@ -27,16 +27,8 @@
 } */
 
 .nav__notification {
-  background-color: tomato;
-  display: flex; /* span은 inline이여서 안된다 block형태로 변환 */
-  width: 30px;
-  height: 30px;
-  border-radius: 15px;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-weight: 600;
-  position: absolute; /* absolute 는 relative와 함께사용 */
+  /* absolute 는 relative와 함께사용 */
+  position: absolute;
   left: 15px;
   bottom: 15px;
 }

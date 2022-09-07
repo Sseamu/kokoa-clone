@@ -4,12 +4,26 @@
   padding: 13px 0px;
   background-color: #fafafa;
   font-size: 18px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  margin-top: -15px; /*screen header에서 margin-bottom 15px
+  를 줘서 꼴보기 싫어서 -15px를 부여*/
 }
 
 #friends-display-link i {
   color: rgba(0, 0, 0, 0.3);
 }
-.friends__screen {
+.friends-screen {
   padding: 0px var(--horizontal-space);
+}
+.friends-screen__Channel {
+  margin-top: 25px;
+  border-top: var(--main-border);
+  padding-top: 15px;
+}
+
+.friends-screen__Channel-header {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
 }

@@ -1,7 +1,8 @@
 .user-component {
-  display: flex;
+  justify-content: space-between;
 }
 
+.user-component,
 .user-component__column:first-child {
   display: flex;
   align-items: center;
@@ -10,6 +11,7 @@
   width: 70px;
   height: 70px;
   border-radius: 30px;
+  margin-right: 20px;
 }
 .user-component__activate {
   font-weight: 600;
@@ -18,9 +20,34 @@
 .user-component__activate__talk {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--main-color);
+  display: flex;
+}
+.user-component__activate__talk i {
+  font-size: 16px;
+  margin-left: 10px;
+  color: tomato;
+  margin-top: 1.5px;
 }
 .user-component__avatar--xl {
   width: 80px;
   height: 80px;
+}
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
+.user-component__activate--not-bold {
+  font-weight: 400;
+}
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.user-component__time {
+  margin-bottom: 10px;
+  display: block;
 }

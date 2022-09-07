@@ -1,0 +1,11 @@
+.badge {
+  background-color: tomato;
+  display: flex; /* span은 inline이여서 안된다 block형태로 변환 */
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+}
