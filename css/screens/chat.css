@@ -1,0 +1,165 @@
+#chat-screen {
+  background-color: #abc1d1;
+  height: 1000vh;
+}
+#chat-screen .status-bar, /*고정시켜주기 */
+#chat-screen .alt-header {
+  top: 0;
+  position: fixed;
+  width: 100%;
+  box-sizing: border-box; /* 사이즈 아웃난 부분을 맞춰주기*/
+  background-color: #abc1d1;
+}
+#chat-screen .status-bar {
+  z-index: 2;
+}
+
+#chat-screen .alt-header {
+  top: 15px;
+  z-index: 1;
+  /*절대적인 위치를 설정해주는 z-index는
+  fixed의 문제를 해결할 수 있다 */
+}
+
+.main-chat {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chat__timestamp {
+  display: flex;
+  padding: 15px;
+  border-radius: 20px;
+  border-color: var(--main-border);
+  color: white;
+  background-color: #92a4b2;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+.message-row {
+  width: 100%;
+  display: flex;
+}
+
+.message-row img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  margin-bottom: 25px;
+}
+
+.message_author {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.message__bubble {
+  background-color: white;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 15px;
+  margin-right: 5px;
+  margin-top: 5px;
+  border-top-left-radius: 0px;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.massage__author,
+.message__time {
+  opacity: 0.8;
+  font-size: 13px;
+}
+.message__time {
+  margin-bottom: 8px;
+}
+
+/* .message-row--Rose {
+  justify-content: flex-end;
+} */
+
+.message-row--Rose .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0px;
+  margin-left: 5px;
+}
+/* .message-row--Rose .message__bubble {
+  order: 1;
+}
+
+.message-row--Rose .message__time {
+  order: 0;
+} */
+/* 순서를 바꾸기 위한 2가지 방법중 1개*/
+.message-row--Rose {
+  flex-direction: row-reverse;
+}
+
+.message__author--Rose {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+#rose_img {
+  margin-left: 10px;
+}
+.reply {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  justify-content: space-between;
+  padding: 5px 25px;
+  box-sizing: border-box;
+  align-items: center;
+}
+.reply .reply__column:first-child {
+  width: 10%;
+}
+.reply .reply__column:last-child {
+  width: 90%;
+  position: relative;
+}
+.reply i {
+  opacity: 0.5;
+}
+.reply input {
+  height: 30px;
+  width: 100%;
+  border-radius: 20px;
+  border: var(--main-border);
+}
+.reply__column:last-child > i,
+.reply__column button {
+  position: absolute;
+  right: -3px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 40px;
+  top: 17px;
+  font-size: 25px;
+}
+
+.reply__column:last-child button {
+  border-radius: 50%;
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+}
+
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}
+.reply__column button i {
+  opacity: 1;
+}

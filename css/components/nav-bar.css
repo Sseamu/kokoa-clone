@@ -17,14 +17,14 @@
   position: relative;
 }
 /* 위에 상단바를 고정시켜주는 명령어 수정필요 */
-/* .status-bar { 
+.status-bar {
   display: flex;
   justify-content: center;
   padding: 5px 3px;
-  position: fixed;
+  position: sticky; /* fixed가 아닌 sticky로 변경되었음*/
   width: 100%;
   box-sizing: border-box;
-} */
+}
 
 .nav__notification {
   /* absolute 는 relative와 함께사용 */
