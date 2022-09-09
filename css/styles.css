@@ -17,6 +17,8 @@
 @import "components/point.css";
 @import "components/icon-row.css";
 @import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
 body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
