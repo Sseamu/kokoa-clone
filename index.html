@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Kokoa Clone</title>
+    <title>Welcome to Kokoa chat</title>
 </head>
 <body>
     <div class="status-bar">
@@ -17,20 +17,20 @@
             <span>18:43</span>
         </div>    
         <div class="status-bar__column">
-            <span>110%</span>
+            <span>82%</span>
             <i class="fa-solid fa-battery-three-quarters fa-lg"></i>
             <i class="fa-solid fa-bolt"></i>
         </div>
     </div>
     <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+        <h1 class="welcome-header__title">Welcome to Kokoa Chat</h1>
         <p class="welcome-header__text">
             If you have a Kokoa Account, log in with your email or phone number.
         </p>
     </header>
     <form action="friends.html" method="get"id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number"/>
-        <input name="password" type="password" placeholder="Password"/>
+        <input name="username" type="email" placeholder="Email or phone number"/>
+        <input name="password" type="password" placeholder="Password" minlength="6" maxlength="12"/>
         <input type="submit" value="Log In" />
         <a href="#">Find Kokoa Account or Password</a>
     </form>
