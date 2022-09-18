@@ -25,7 +25,10 @@
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
-  color: var(--main-color);
+  color: rgba(0,0,0,0.6);
+  font-family: 'Nanum Gothic', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
 }
 @keyframes hideSplashScreen {
   from {
